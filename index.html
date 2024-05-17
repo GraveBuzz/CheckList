@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check List</title>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+    <div>
+        <header>
+            <H1>Check List Facil</H1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="https://github.com/GraveBuzz" target="_blank">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="container">
+        <img src="./imagem/inc.jpg" alt="Icone do check list"/>
+        <h2>CheckList</h2>
+        <button type="button" id="iniciar">Novo CheckList</button>
+        <form>
+            <label for="tarefa" required >Digite o nome da atividade:</label><br>
+            <input type="text" name="tarefa"  id="tarefa"  required /><br>
+            <label for="data">Digite a data:</label><br>
+            <input type="date" required name="data" id="data" /><br>
+            <button id="btn-add" type="submit">Adicionar</button>
+        </form>
+        <div class="ul-container">
+            <div id="menssagem-data"></div>
+            <ul id="lista-atividades">
+            </ul>
+            <button type="reset" id="btn-reset">Apagar rotina</button>
+        </div>
+    </div>
+    <footer>
+        <p>
+            &copy; Grave Buzz - Todos os direitos reservados - 2024
+        </p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
